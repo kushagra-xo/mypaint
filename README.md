@@ -1,0 +1,1 @@
+![mypaint header](mypaint.png)
