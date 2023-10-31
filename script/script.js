@@ -2,13 +2,17 @@ const SIZE = 16;
 const DEFAULT_COLOR = '#0b0b0b';
 
 let current_size = SIZE;
-let current_color = document.getElementById('color').value;
+let current_color = DEFAULT_COLOR;
+
+document.getElementById('color').addEventListener('input', function() {
+  current_color = this.value;
+});
+
 
 let board = document.getElementById('board');
 
 function changeColor()
 {
-	current_color = document.getElementById('color').value;
 	this.style.backgroundColor = current_color;
 }
 
