@@ -1,12 +1,13 @@
 const SIZE = 16;
+const DEFAULT_COLOR = '#0b0b0b';
 
-let colorInput = document.getElementById('color');
-colorInput.addEventListener('input', function() {
+let current_size = SIZE;
+let current_color = DEFAULT_COLOR;
+
+document.getElementById('color').addEventListener('input', function() {
   current_color = this.value;
 });
 
-let current_size = SIZE;
-let current_color = colorInput.value;
 
 let board = document.getElementById('board');
 
