@@ -5,6 +5,7 @@ let board = document.getElementById('board');
 
 // config buttons
 let colorInput = document.getElementById('color');
+let reset = document.getElementById('reset');
 let eraserMode = document.getElementById('eraserMode');
 let colorMode = document.getElementById('colorMode');
 
@@ -16,6 +17,7 @@ let activeMode = document.querySelector('.activeMode');
 let current_size = SIZE;
 let current_color = colorInput.value;
 
+// event listeners
 colorInput.addEventListener('input', function() {current_color = this.value;});
 eraserMode.addEventListener('click', function(){
 	mode = 'erase'
@@ -29,7 +31,7 @@ colorMode.addEventListener('click', function(){
 	this.classList.toggle('activeMode')
   activeMode = this;
 });
-
+reset.addEventListener('click', resetBoard)
 
 function changeColor()
 {
@@ -39,6 +41,13 @@ function changeColor()
 	else if (mode == 'color'){
 		this.style.backgroundColor = current_color;
 	}
+}
+
+function resetBoard() {
+  let boardCells = document.querySelectorAll('.boardCell');
+  boardCells.forEach(function(cell) {
+    cell.style.backgroundColor = DEFAULT_COLOR;
+  });
 }
 
 function createGrid()
