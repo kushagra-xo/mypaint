@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+
+body{
+  display: flex;
+  background: #1f1f1f;
+  flex-flow: column nowrap;
+  padding: 2%;
+  color: white;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  background: #4d4d4d;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 30px;
+  margin-bottom: 3%;
+}
+
+#board{
+  display: grid;
+  width: 500px;
+  height: 500px;
+  gap: 5px;
+}
+
+.boardCell{
+  background: #4d4d4d;
+}
+
+#js{
+  font-family: mono;
+  color: #e0ff7b;
+}
+
+h1{
+  font-family: Urbanist, sans;
+}
+
+h3{
+  font-family: Urbanist, sans;
+}
