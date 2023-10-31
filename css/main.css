@@ -10,6 +10,8 @@ body{
 
 main{
   display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
   justify-content: space-around;
   align-items: center;
 }
@@ -17,7 +19,7 @@ main{
 header{
   display: flex;
   background: #4d4d4d;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   padding: 2px 30px;
