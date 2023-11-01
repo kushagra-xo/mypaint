@@ -6,11 +6,11 @@ let colorInput = document.getElementById('color');
 let reset = document.getElementById('reset');
 let eraserMode = document.getElementById('eraserMode');
 let colorMode = document.getElementById('colorMode');
-let activeMode = document.querySelector('.activeMode');
 let boardCells = document.querySelectorAll('.boardCell');
 
 let mode = 'color';
 colorMode.classList.add('activeMode');
+let activeMode = document.querySelector('.activeMode');
 
 let current_color = colorInput.value;
 
