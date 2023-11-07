@@ -17,8 +17,9 @@ main, header {
 header {
  background: #4d4d4d;
  padding: 0.125rem 1.875rem;
- margin-bottom: 5vmin;
+ margin: 0px 4vw 8vh 4vw;
  justify-content: space-around;
+ border-radius: 20px;
 }
 
 main{
