@@ -3,7 +3,7 @@ body {
  display: flex;
  background: linear-gradient(to right, #1f1f1f, #303030);
  flex-direction: column;
- padding: 2rem;
+ padding: 2vh;
  color: white;
  font-family: 'Urbanist', sans-serif;
 }
@@ -11,7 +11,6 @@ body {
 main, header {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-around;
  align-items: center;
 }
 
@@ -19,6 +18,11 @@ header {
  background: #4d4d4d;
  padding: 0.125rem 1.875rem;
  margin-bottom: 5vmin;
+ justify-content: space-around;
+}
+
+main{
+	justify-content: center;
 }
 
 /* Board Styles */
@@ -26,11 +30,11 @@ header {
  display: grid;
  height: 70vmin;
  aspect-ratio: 1;
- gap: 5px;
 }
 
 .boardCell {
  background: #4d4d4d;
+ border: solid black 1px;
 }
 
 /* Settings Styles */
